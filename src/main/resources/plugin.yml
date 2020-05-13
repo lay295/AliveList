@@ -1,0 +1,4 @@
+name: AliveList
+version: ${project.version}
+main: com.fakedomain.alivelist.Alivelist
+api-version: 1.13
