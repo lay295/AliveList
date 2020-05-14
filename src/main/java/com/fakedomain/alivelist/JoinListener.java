@@ -1,5 +1,8 @@
 package com.fakedomain.alivelist;
 
+import com.Alvaeron.Engine;
+import com.Alvaeron.api.RPEngineAPI;
+import com.Alvaeron.player.RoleplayPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -8,13 +11,13 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.scoreboard.ScoreboardManager;
 import org.bukkit.scoreboard.Team;
 
-import java.util.ArrayList;
 import java.util.Set;
 import java.util.UUID;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class JoinListener implements Listener {
-    ArrayList<PlayerData> playerList = new ArrayList<PlayerData>();
-    public JoinListener(ArrayList<PlayerData> PlayerList) {
+    CopyOnWriteArrayList<PlayerData> playerList = new CopyOnWriteArrayList<PlayerData>();
+    public JoinListener(CopyOnWriteArrayList<PlayerData> PlayerList) {
         playerList = PlayerList;
     }
 
@@ -62,7 +65,9 @@ public class JoinListener implements Listener {
             else
                 currentData.latestTeam = currentTeam.getName();
         }
-
+        PlayerData finalCurrentData = currentData;
+        //Have to delay getting RP name because of database shenanigans
+        Bukkit.getScheduler ().runTaskLater (Bukkit.getPluginManager().getPlugin("AliveList"), () -> DataSave.updateRpName(currentPlayer, finalCurrentData), 20 * 5);
         DataSave.saveList(playerList);
     }
 }

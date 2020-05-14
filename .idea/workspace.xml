@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8716fbe0-50c1-4877-ac85-e76b5b346e78" name="Default Changelist" comment="" />
+    <list default="true" id="8716fbe0-50c1-4877-ac85-e76b5b346e78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_steffansk1997_RPEngine_master_ee79c6d019_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AliveList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AliveList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/Alivelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/Alivelist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/DataSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/DataSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/DeathListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/DeathListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/JoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/ListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/ListCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/PlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakedomain/alivelist/PlayerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,9 +44,11 @@
   <component name="ProjectId" id="1bqKvWtOLWRXHsa6aPgRW0LR5r5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RPEngine/RPEngine-4.5.3.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -97,7 +114,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

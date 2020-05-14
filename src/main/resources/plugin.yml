@@ -1,9 +1,18 @@
 name: AliveList
 version: ${project.version}
-main: com.fakedomain.alivelist.Alivelist
+main: com.fakedomain.alivelist.AliveList
 api-version: 1.13
+depend: [RPEngine]
 
 commands:
   alivelist:
+
     description: Lists alive players, even disconnected ones
-    usage: /alivelist
+    usage: /alivelist [ remove <username> ]
+    permission: alivelist.list
+    permission-message: Sorry! You don't have permission to execute that command.
+
+permissions:
+  alivelist.list:
+    description: Allows player to list alive players
+    default: true

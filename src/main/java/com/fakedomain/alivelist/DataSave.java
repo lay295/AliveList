@@ -1,20 +1,23 @@
 package com.fakedomain.alivelist;
 
+import com.Alvaeron.api.RPEngineAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import org.bukkit.entity.Player;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.UUID;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import static org.bukkit.Bukkit.getServer;
 
 public class DataSave {
-    public static void saveList(ArrayList<PlayerData> playerList) {
+    public static void saveList(CopyOnWriteArrayList<PlayerData> playerList) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonString = gson.toJson(playerList);
-        getServer().getLogger().info(jsonString);
         try {
             FileOutputStream outputStream = new FileOutputStream("alivelist.json");
             byte[] strToBytes = jsonString.getBytes();
@@ -26,8 +29,8 @@ public class DataSave {
         }
     }
 
-    public static ArrayList<PlayerData> loadList() {
-        ArrayList<PlayerData> returnList = new ArrayList<PlayerData>();
+    public static CopyOnWriteArrayList<PlayerData> loadList() {
+        CopyOnWriteArrayList<PlayerData> returnList = new CopyOnWriteArrayList<PlayerData>();
         File f = new File("alivelist.json");
         if (f.exists() && !f.isDirectory()) {
             //File exists
@@ -43,11 +46,15 @@ public class DataSave {
             }
             myReader.close();
 
-            returnList = new Gson().fromJson(jsonString, new TypeToken<ArrayList<PlayerData>>(){}.getType());
+            returnList = new Gson().fromJson(jsonString, new TypeToken<CopyOnWriteArrayList<PlayerData>>(){}.getType());
             if (returnList == null)
-                returnList = new ArrayList<PlayerData>();
+                returnList = new CopyOnWriteArrayList<PlayerData>();
         }
 
         return returnList;
+    }
+
+    public static void updateRpName(Player player, PlayerData data) {
+        data.latestRoleplayName = RPEngineAPI.getRpName(player.getName());
     }
 }

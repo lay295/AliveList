@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.steffansk1997:RPEngine:master-ee79c6d019-1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/steffansk1997/RPEngine/master-ee79c6d019-1/RPEngine-master-ee79c6d019-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/steffansk1997/RPEngine/master-ee79c6d019-1/RPEngine-master-ee79c6d019-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/steffansk1997/RPEngine/master-ee79c6d019-1/RPEngine-master-ee79c6d019-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

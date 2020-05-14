@@ -6,10 +6,11 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 
 import java.util.ArrayList;
 import java.util.UUID;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class DeathListener implements Listener {
-    ArrayList<PlayerData> playerList = new ArrayList<PlayerData>();
-    public DeathListener(ArrayList<PlayerData> PlayerList) {
+    CopyOnWriteArrayList<PlayerData> playerList = new CopyOnWriteArrayList<PlayerData>();
+    public DeathListener(CopyOnWriteArrayList<PlayerData> PlayerList) {
         playerList = PlayerList;
     }
 
